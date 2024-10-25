@@ -24,6 +24,5 @@ class A{
 int main()
 {
     A ob;
-
     return 0;
 }
