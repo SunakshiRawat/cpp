@@ -1,4 +1,4 @@
- //Find the sum of two, three, and four numbers with the help of function overloading
+//Find the sum of two, three, and four numbers with the help of function overloading
 
 #include <iostream>
 using namespace std;
