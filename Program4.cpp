@@ -5,51 +5,42 @@ using namespace std;
 
 class A {
 private:
-    int privateA;
-
+    int dataA = 10;
 protected:
-    int protectedA;
-
-public:
-    // Constructor to initialize private and protected members
-    A(int pA, int protA) : privateA(pA), protectedA(protA) {}
-
-    // Grant FriendClass access to private and protected members
+    int protectedDataA = 20;
     friend class FriendClass;
 };
 
 class B {
 private:
-    int privateB;
-
+    int dataB = 30;
 protected:
-    int protectedB;
-
-public:
-    // Constructor to initialize private and protected members
-    B(int pB, int protB) : privateB(pB), protectedB(protB) {}
-
-    // Grant FriendClass access to private and protected members
+    int protectedDataB = 40;
     friend class FriendClass;
 };
 
 class C {
 private:
-    int privateC;
-
+    int dataC = 50;
 protected:
-    int protectedC;
-
-public:
-    // Constructor to initialize private and protected members
-    C(int pC, int protC) : privateC(pC), protectedC(protC) {}
-
-    // Grant FriendClass access to private and protected members
+    int protectedDataC = 60;
     friend class FriendClass;
 };
 
 class FriendClass {
 public:
-    // Single function to display private and protected members of all classes
-    void displayAll(const A &objA, const B &objB, const C &objC) {
-        cout << "Class A - Private: " << objA.privateA <<
+    void display(A a, B b, C c) {
+        cout << "Class A: " << a.dataA << ", " << a.protectedDataA << endl;
+        cout << "Class B: " << b.dataB << ", " << b.protectedDataB << endl;
+        cout << "Class C: " << c.dataC << ", " << c.protectedDataC << endl;
+    }
+};
+
+int main() {
+    A a;
+    B b;
+    C c;
+    FriendClass f;
+    f.display(a, b, c);
+    return 0;
+}
