@@ -1,7 +1,7 @@
 //Create a program on hybrid inheritance where we have five classes A, B, C, D and E. Class B, C and D inherit from class A and class E inherit from class B.
+
 #include <iostream>
 using namespace std;
-
 
 class A {
 public:
