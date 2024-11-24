@@ -1,3 +1,5 @@
+// Using heirarchial inheritance where two numbers are declared in base class. Create one functiom in first derived class and one function in second derived class. First derived cass displays the first number with the help of their function and the second derived class displays the second function with the help of their fumvtion.
+
 #include <iostream>
 using namespace std;
 
